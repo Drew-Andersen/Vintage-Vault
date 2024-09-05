@@ -11,9 +11,14 @@
     "build": "cd client && npm run build"
   },
   "keywords": [],
-  "contributors": ["Drew Andersen", "Xavier Leon", "Setride Crewford"],
+  "contributors": [
+    "Drew Andersen",
+    "Xavier Leon",
+    "Setride Crewford"
+  ],
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "vite": "^5.4.3"
   }
 }
