@@ -1,6 +1,7 @@
-const { Schema, model } = require('mongoose');
+const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
-const uerSchema = new Schema (
+const userSchema = new Schema (
     {
       username: {
         type: String,
@@ -14,11 +15,11 @@ const uerSchema = new Schema (
         type: String,
         required: true,
       },
-      items: {
-        type: Map,
-        of: Items,
-      },
-      cretaedAt: {
+      items: [{
+        type: Schema.Types.ObjectID,
+        ref: "Item",
+      }],
+      createdAt: {
         type: Date,
         default: Date.now(),
         require: true,
@@ -27,4 +28,6 @@ const uerSchema = new Schema (
  }
 );
 
+
+const User = mongoose.model('User', userSchema);
 module.exports = User;
