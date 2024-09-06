@@ -8,7 +8,7 @@ export default function Login() {
                 <div className='w-50 m-auto'>
                     <div className='mx-auto my-5 py-3 border border-dark rounded'>
                         <Form className='w-50 m-auto'>
-                            <h3 className='font-weight-bold'>Login</h3>
+                            <h3 className='font-weight-bold text-center'>Login</h3>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control className='border border-rounded border-dark' type="email" placeholder="Please enter a email" />
