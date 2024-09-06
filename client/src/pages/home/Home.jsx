@@ -5,17 +5,7 @@ const Home = () => {
   return (
     <div className="home-container">
       {/* Header */}
-      <header className="header">
-        <h1>Vintage Vault</h1>
-        <div className="search-bar">
-          <input type="text" placeholder="Search for anything" />
-          <button>Search</button>
-        </div>
-        <div className="auth-links">
-          <a href="/signup">Sign-up</a>
-          <a href="/login">Login</a>
-        </div>
-      </header>
+      
 
       {/* Era Section */}
       <div className="era-buttons">
