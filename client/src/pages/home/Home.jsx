@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 import './home.css'; // CSS file to style the page
 
 const Home = () => {
@@ -9,10 +10,10 @@ const Home = () => {
 
       {/* Era Section */}
       <div className="era-buttons">
-        <button>70's era</button>
-        <button>80's era</button>
-        <button>90's era</button>
-        <button>00's era</button>
+        <Button variant="secondary" className='text-dark'>70's era</Button>{' '}
+        <Button variant="secondary" className='text-dark'>80's era</Button>{' '}
+        <Button variant="secondary" className='text-dark'>90's era</Button>{' '}
+        <Button variant="secondary" className='text-dark'>00's era</Button>{' '}
       </div>
 
       {/* Build a Collection Section */}
@@ -53,11 +54,6 @@ const Home = () => {
           ))}
         </div>
       </section>
-
-      {/* footer */}
-      <footer className="footer">
-        Footer
-      </footer>
     </div>
   );
 };
