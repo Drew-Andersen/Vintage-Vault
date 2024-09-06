@@ -1,0 +1,702 @@
+[
+    {
+        "name": "Vintage Item 1",
+        "description": "This is a description of Vintage Item 1 from the 1980s.",
+        "price": "$11.98",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-1.jpg"
+    },
+    {
+        "name": "Vintage Item 2",
+        "description": "This is a description of Vintage Item 2 from the 1990s.",
+        "price": "$17.97",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-2.jpg"
+    },
+    {
+        "name": "Vintage Item 3",
+        "description": "This is a description of Vintage Item 3 from the 2000s.",
+        "price": "$23.96",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-3.jpg"
+    },
+    {
+        "name": "Vintage Item 4",
+        "description": "This is a description of Vintage Item 4 from the 2010s.",
+        "price": "$29.95",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-4.jpg"
+    },
+    {
+        "name": "Vintage Item 5",
+        "description": "This is a description of Vintage Item 5 from the 1970s.",
+        "price": "$35.94",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-5.jpg"
+    },
+    {
+        "name": "Vintage Item 6",
+        "description": "This is a description of Vintage Item 6 from the 1980s.",
+        "price": "$41.93",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-6.jpg"
+    },
+    {
+        "name": "Vintage Item 7",
+        "description": "This is a description of Vintage Item 7 from the 1990s.",
+        "price": "$47.92",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-7.jpg"
+    },
+    {
+        "name": "Vintage Item 8",
+        "description": "This is a description of Vintage Item 8 from the 2000s.",
+        "price": "$53.91",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-8.jpg"
+    },
+    {
+        "name": "Vintage Item 9",
+        "description": "This is a description of Vintage Item 9 from the 2010s.",
+        "price": "$59.9",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-9.jpg"
+    },
+    {
+        "name": "Vintage Item 10",
+        "description": "This is a description of Vintage Item 10 from the 1970s.",
+        "price": "$65.89",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-10.jpg"
+    },
+    {
+        "name": "Vintage Item 11",
+        "description": "This is a description of Vintage Item 11 from the 1980s.",
+        "price": "$71.88",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-11.jpg"
+    },
+    {
+        "name": "Vintage Item 12",
+        "description": "This is a description of Vintage Item 12 from the 1990s.",
+        "price": "$77.87",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-12.jpg"
+    },
+    {
+        "name": "Vintage Item 13",
+        "description": "This is a description of Vintage Item 13 from the 2000s.",
+        "price": "$83.86",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-13.jpg"
+    },
+    {
+        "name": "Vintage Item 14",
+        "description": "This is a description of Vintage Item 14 from the 2010s.",
+        "price": "$89.85",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-14.jpg"
+    },
+    {
+        "name": "Vintage Item 15",
+        "description": "This is a description of Vintage Item 15 from the 1970s.",
+        "price": "$95.84",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-15.jpg"
+    },
+    {
+        "name": "Vintage Item 16",
+        "description": "This is a description of Vintage Item 16 from the 1980s.",
+        "price": "$101.83",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-16.jpg"
+    },
+    {
+        "name": "Vintage Item 17",
+        "description": "This is a description of Vintage Item 17 from the 1990s.",
+        "price": "$107.82",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-17.jpg"
+    },
+    {
+        "name": "Vintage Item 18",
+        "description": "This is a description of Vintage Item 18 from the 2000s.",
+        "price": "$113.81",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-18.jpg"
+    },
+    {
+        "name": "Vintage Item 19",
+        "description": "This is a description of Vintage Item 19 from the 2010s.",
+        "price": "$119.8",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-19.jpg"
+    },
+    {
+        "name": "Vintage Item 20",
+        "description": "This is a description of Vintage Item 20 from the 1970s.",
+        "price": "$125.79",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-20.jpg"
+    },
+    {
+        "name": "Vintage Item 21",
+        "description": "This is a description of Vintage Item 21 from the 1980s.",
+        "price": "$131.78",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-21.jpg"
+    },
+    {
+        "name": "Vintage Item 22",
+        "description": "This is a description of Vintage Item 22 from the 1990s.",
+        "price": "$137.77",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-22.jpg"
+    },
+    {
+        "name": "Vintage Item 23",
+        "description": "This is a description of Vintage Item 23 from the 2000s.",
+        "price": "$143.76",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-23.jpg"
+    },
+    {
+        "name": "Vintage Item 24",
+        "description": "This is a description of Vintage Item 24 from the 2010s.",
+        "price": "$149.75",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-24.jpg"
+    },
+    {
+        "name": "Vintage Item 25",
+        "description": "This is a description of Vintage Item 25 from the 1970s.",
+        "price": "$155.74",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-25.jpg"
+    },
+    {
+        "name": "Vintage Item 26",
+        "description": "This is a description of Vintage Item 26 from the 1980s.",
+        "price": "$161.73",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-26.jpg"
+    },
+    {
+        "name": "Vintage Item 27",
+        "description": "This is a description of Vintage Item 27 from the 1990s.",
+        "price": "$167.72",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-27.jpg"
+    },
+    {
+        "name": "Vintage Item 28",
+        "description": "This is a description of Vintage Item 28 from the 2000s.",
+        "price": "$173.71",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-28.jpg"
+    },
+    {
+        "name": "Vintage Item 29",
+        "description": "This is a description of Vintage Item 29 from the 2010s.",
+        "price": "$179.7",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-29.jpg"
+    },
+    {
+        "name": "Vintage Item 30",
+        "description": "This is a description of Vintage Item 30 from the 1970s.",
+        "price": "$185.69",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-30.jpg"
+    },
+    {
+        "name": "Vintage Item 31",
+        "description": "This is a description of Vintage Item 31 from the 1980s.",
+        "price": "$191.68",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-31.jpg"
+    },
+    {
+        "name": "Vintage Item 32",
+        "description": "This is a description of Vintage Item 32 from the 1990s.",
+        "price": "$197.67",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-32.jpg"
+    },
+    {
+        "name": "Vintage Item 33",
+        "description": "This is a description of Vintage Item 33 from the 2000s.",
+        "price": "$203.66",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-33.jpg"
+    },
+    {
+        "name": "Vintage Item 34",
+        "description": "This is a description of Vintage Item 34 from the 2010s.",
+        "price": "$209.65",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-34.jpg"
+    },
+    {
+        "name": "Vintage Item 35",
+        "description": "This is a description of Vintage Item 35 from the 1970s.",
+        "price": "$215.64",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-35.jpg"
+    },
+    {
+        "name": "Vintage Item 36",
+        "description": "This is a description of Vintage Item 36 from the 1980s.",
+        "price": "$221.63",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-36.jpg"
+    },
+    {
+        "name": "Vintage Item 37",
+        "description": "This is a description of Vintage Item 37 from the 1990s.",
+        "price": "$227.62",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-37.jpg"
+    },
+    {
+        "name": "Vintage Item 38",
+        "description": "This is a description of Vintage Item 38 from the 2000s.",
+        "price": "$233.61",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-38.jpg"
+    },
+    {
+        "name": "Vintage Item 39",
+        "description": "This is a description of Vintage Item 39 from the 2010s.",
+        "price": "$239.6",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-39.jpg"
+    },
+    {
+        "name": "Vintage Item 40",
+        "description": "This is a description of Vintage Item 40 from the 1970s.",
+        "price": "$245.59",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-40.jpg"
+    },
+    {
+        "name": "Vintage Item 41",
+        "description": "This is a description of Vintage Item 41 from the 1980s.",
+        "price": "$251.58",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-41.jpg"
+    },
+    {
+        "name": "Vintage Item 42",
+        "description": "This is a description of Vintage Item 42 from the 1990s.",
+        "price": "$257.57",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-42.jpg"
+    },
+    {
+        "name": "Vintage Item 43",
+        "description": "This is a description of Vintage Item 43 from the 2000s.",
+        "price": "$263.56",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-43.jpg"
+    },
+    {
+        "name": "Vintage Item 44",
+        "description": "This is a description of Vintage Item 44 from the 2010s.",
+        "price": "$269.55",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-44.jpg"
+    },
+    {
+        "name": "Vintage Item 45",
+        "description": "This is a description of Vintage Item 45 from the 1970s.",
+        "price": "$275.54",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-45.jpg"
+    },
+    {
+        "name": "Vintage Item 46",
+        "description": "This is a description of Vintage Item 46 from the 1980s.",
+        "price": "$281.53",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-46.jpg"
+    },
+    {
+        "name": "Vintage Item 47",
+        "description": "This is a description of Vintage Item 47 from the 1990s.",
+        "price": "$287.52",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-47.jpg"
+    },
+    {
+        "name": "Vintage Item 48",
+        "description": "This is a description of Vintage Item 48 from the 2000s.",
+        "price": "$293.51",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-48.jpg"
+    },
+    {
+        "name": "Vintage Item 49",
+        "description": "This is a description of Vintage Item 49 from the 2010s.",
+        "price": "$299.5",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-49.jpg"
+    },
+    {
+        "name": "Vintage Item 50",
+        "description": "This is a description of Vintage Item 50 from the 1970s.",
+        "price": "$305.49",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-50.jpg"
+    },
+    {
+        "name": "Vintage Item 51",
+        "description": "This is a description of Vintage Item 51 from the 1980s.",
+        "price": "$311.48",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-51.jpg"
+    },
+    {
+        "name": "Vintage Item 52",
+        "description": "This is a description of Vintage Item 52 from the 1990s.",
+        "price": "$317.47",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-52.jpg"
+    },
+    {
+        "name": "Vintage Item 53",
+        "description": "This is a description of Vintage Item 53 from the 2000s.",
+        "price": "$323.46",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-53.jpg"
+    },
+    {
+        "name": "Vintage Item 54",
+        "description": "This is a description of Vintage Item 54 from the 2010s.",
+        "price": "$329.45",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-54.jpg"
+    },
+    {
+        "name": "Vintage Item 55",
+        "description": "This is a description of Vintage Item 55 from the 1970s.",
+        "price": "$335.44",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-55.jpg"
+    },
+    {
+        "name": "Vintage Item 56",
+        "description": "This is a description of Vintage Item 56 from the 1980s.",
+        "price": "$341.43",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-56.jpg"
+    },
+    {
+        "name": "Vintage Item 57",
+        "description": "This is a description of Vintage Item 57 from the 1990s.",
+        "price": "$347.42",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-57.jpg"
+    },
+    {
+        "name": "Vintage Item 58",
+        "description": "This is a description of Vintage Item 58 from the 2000s.",
+        "price": "$353.41",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-58.jpg"
+    },
+    {
+        "name": "Vintage Item 59",
+        "description": "This is a description of Vintage Item 59 from the 2010s.",
+        "price": "$359.4",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-59.jpg"
+    },
+    {
+        "name": "Vintage Item 60",
+        "description": "This is a description of Vintage Item 60 from the 1970s.",
+        "price": "$365.39",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-60.jpg"
+    },
+    {
+        "name": "Vintage Item 61",
+        "description": "This is a description of Vintage Item 61 from the 1980s.",
+        "price": "$371.38",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-61.jpg"
+    },
+    {
+        "name": "Vintage Item 62",
+        "description": "This is a description of Vintage Item 62 from the 1990s.",
+        "price": "$377.37",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-62.jpg"
+    },
+    {
+        "name": "Vintage Item 63",
+        "description": "This is a description of Vintage Item 63 from the 2000s.",
+        "price": "$383.36",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-63.jpg"
+    },
+    {
+        "name": "Vintage Item 64",
+        "description": "This is a description of Vintage Item 64 from the 2010s.",
+        "price": "$389.35",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-64.jpg"
+    },
+    {
+        "name": "Vintage Item 65",
+        "description": "This is a description of Vintage Item 65 from the 1970s.",
+        "price": "$395.34",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-65.jpg"
+    },
+    {
+        "name": "Vintage Item 66",
+        "description": "This is a description of Vintage Item 66 from the 1980s.",
+        "price": "$401.33",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-66.jpg"
+    },
+    {
+        "name": "Vintage Item 67",
+        "description": "This is a description of Vintage Item 67 from the 1990s.",
+        "price": "$407.32",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-67.jpg"
+    },
+    {
+        "name": "Vintage Item 68",
+        "description": "This is a description of Vintage Item 68 from the 2000s.",
+        "price": "$413.31",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-68.jpg"
+    },
+    {
+        "name": "Vintage Item 69",
+        "description": "This is a description of Vintage Item 69 from the 2010s.",
+        "price": "$419.3",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-69.jpg"
+    },
+    {
+        "name": "Vintage Item 70",
+        "description": "This is a description of Vintage Item 70 from the 1970s.",
+        "price": "$425.29",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-70.jpg"
+    },
+    {
+        "name": "Vintage Item 71",
+        "description": "This is a description of Vintage Item 71 from the 1980s.",
+        "price": "$431.28",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-71.jpg"
+    },
+    {
+        "name": "Vintage Item 72",
+        "description": "This is a description of Vintage Item 72 from the 1990s.",
+        "price": "$437.27",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-72.jpg"
+    },
+    {
+        "name": "Vintage Item 73",
+        "description": "This is a description of Vintage Item 73 from the 2000s.",
+        "price": "$443.26",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-73.jpg"
+    },
+    {
+        "name": "Vintage Item 74",
+        "description": "This is a description of Vintage Item 74 from the 2010s.",
+        "price": "$449.25",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-74.jpg"
+    },
+    {
+        "name": "Vintage Item 75",
+        "description": "This is a description of Vintage Item 75 from the 1970s.",
+        "price": "$455.24",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-75.jpg"
+    },
+    {
+        "name": "Vintage Item 76",
+        "description": "This is a description of Vintage Item 76 from the 1980s.",
+        "price": "$461.23",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-76.jpg"
+    },
+    {
+        "name": "Vintage Item 77",
+        "description": "This is a description of Vintage Item 77 from the 1990s.",
+        "price": "$467.22",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-77.jpg"
+    },
+    {
+        "name": "Vintage Item 78",
+        "description": "This is a description of Vintage Item 78 from the 2000s.",
+        "price": "$473.21",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-78.jpg"
+    },
+    {
+        "name": "Vintage Item 79",
+        "description": "This is a description of Vintage Item 79 from the 2010s.",
+        "price": "$479.2",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-79.jpg"
+    },
+    {
+        "name": "Vintage Item 80",
+        "description": "This is a description of Vintage Item 80 from the 1970s.",
+        "price": "$485.19",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-80.jpg"
+    },
+    {
+        "name": "Vintage Item 81",
+        "description": "This is a description of Vintage Item 81 from the 1980s.",
+        "price": "$491.18",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-81.jpg"
+    },
+    {
+        "name": "Vintage Item 82",
+        "description": "This is a description of Vintage Item 82 from the 1990s.",
+        "price": "$497.17",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-82.jpg"
+    },
+    {
+        "name": "Vintage Item 83",
+        "description": "This is a description of Vintage Item 83 from the 2000s.",
+        "price": "$503.16",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-83.jpg"
+    },
+    {
+        "name": "Vintage Item 84",
+        "description": "This is a description of Vintage Item 84 from the 2010s.",
+        "price": "$509.15",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-84.jpg"
+    },
+    {
+        "name": "Vintage Item 85",
+        "description": "This is a description of Vintage Item 85 from the 1970s.",
+        "price": "$515.14",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-85.jpg"
+    },
+    {
+        "name": "Vintage Item 86",
+        "description": "This is a description of Vintage Item 86 from the 1980s.",
+        "price": "$521.13",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-86.jpg"
+    },
+    {
+        "name": "Vintage Item 87",
+        "description": "This is a description of Vintage Item 87 from the 1990s.",
+        "price": "$527.12",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-87.jpg"
+    },
+    {
+        "name": "Vintage Item 88",
+        "description": "This is a description of Vintage Item 88 from the 2000s.",
+        "price": "$533.11",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-88.jpg"
+    },
+    {
+        "name": "Vintage Item 89",
+        "description": "This is a description of Vintage Item 89 from the 2010s.",
+        "price": "$539.1",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-89.jpg"
+    },
+    {
+        "name": "Vintage Item 90",
+        "description": "This is a description of Vintage Item 90 from the 1970s.",
+        "price": "$545.09",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-90.jpg"
+    },
+    {
+        "name": "Vintage Item 91",
+        "description": "This is a description of Vintage Item 91 from the 1980s.",
+        "price": "$551.08",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-91.jpg"
+    },
+    {
+        "name": "Vintage Item 92",
+        "description": "This is a description of Vintage Item 92 from the 1990s.",
+        "price": "$557.07",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-92.jpg"
+    },
+    {
+        "name": "Vintage Item 93",
+        "description": "This is a description of Vintage Item 93 from the 2000s.",
+        "price": "$563.06",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-93.jpg"
+    },
+    {
+        "name": "Vintage Item 94",
+        "description": "This is a description of Vintage Item 94 from the 2010s.",
+        "price": "$569.05",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-94.jpg"
+    },
+    {
+        "name": "Vintage Item 95",
+        "description": "This is a description of Vintage Item 95 from the 1970s.",
+        "price": "$575.04",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-95.jpg"
+    },
+    {
+        "name": "Vintage Item 96",
+        "description": "This is a description of Vintage Item 96 from the 1980s.",
+        "price": "$581.03",
+        "category": "Clothing",
+        "imageURL": "https://nostalgia-store.com/item-96.jpg"
+    },
+    {
+        "name": "Vintage Item 97",
+        "description": "This is a description of Vintage Item 97 from the 1990s.",
+        "price": "$587.02",
+        "category": "Electronics",
+        "imageURL": "https://nostalgia-store.com/item-97.jpg"
+    },
+    {
+        "name": "Vintage Item 98",
+        "description": "This is a description of Vintage Item 98 from the 2000s.",
+        "price": "$593.01",
+        "category": "Music",
+        "imageURL": "https://nostalgia-store.com/item-98.jpg"
+    },
+    {
+        "name": "Vintage Item 99",
+        "description": "This is a description of Vintage Item 99 from the 2010s.",
+        "price": "$599.0",
+        "category": "Movies",
+        "imageURL": "https://nostalgia-store.com/item-99.jpg"
+    },
+    {
+        "name": "Vintage Item 100",
+        "description": "This is a description of Vintage Item 100 from the 1970s.",
+        "price": "$604.99",
+        "category": "Toys",
+        "imageURL": "https://nostalgia-store.com/item-100.jpg"
+    }
+]
