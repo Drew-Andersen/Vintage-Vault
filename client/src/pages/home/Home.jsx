@@ -4,6 +4,14 @@ import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
 import './home.css'; // CSS file to style the page
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  // navigate to cart page on cart button click
+  const goToCart = () => {
+    navigate('/cart');
+  };
+  
+  
   return (
     <div className="home-container">
       {/* Header */}
@@ -17,7 +25,7 @@ const Home = () => {
           <Button variant="secondary" className='text-dark'>00's era</Button>{' '}
         </div>
         {/* Shopping Cart Button */}
-        <Button variant="primary" className="cart-button">
+        <Button variant="primary" className="cart-button" onClick={goToCart}>
           <FaShoppingCart /> Cart
         </Button>
       </div>
