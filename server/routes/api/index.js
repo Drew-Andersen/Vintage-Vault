@@ -3,9 +3,9 @@ const userRoutes = require('./userRoutes');
 const itemRoutes = require('./itemRoute');
 
 
-router.use('/userRoutes', userRoutes);
-router.use('/itemRoute', itemRoutes);
+router.use('/users', userRoutes);
+router.use('/items', itemRoutes);
 
-router.use('/userRoutes', userRoutes);
+
 
 module.exports = router;
