@@ -2,8 +2,18 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
 import './home.css'; // CSS file to style the page
+import { useNavigate } from 'react-router-dom';
+
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  // navigate to cart page on cart button click
+  const goToCart = () => {
+    navigate('/User');
+  };
+  
+  
   return (
     <div className="home-container">
       {/* Header */}
@@ -17,7 +27,7 @@ const Home = () => {
           <Button variant="secondary" className='text-dark'>00's era</Button>{' '}
         </div>
         {/* Shopping Cart Button */}
-        <Button variant="primary" className="cart-button">
+        <Button variant="primary" className="cart-button" onClick={goToCart}>
           <FaShoppingCart /> Cart
         </Button>
       </div>
