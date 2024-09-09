@@ -10,7 +10,7 @@ const Home = () => {
 
   // navigate to cart page on cart button click
   const goToCart = () => {
-    navigate('/cart');
+    navigate('/User');
   };
   
   
