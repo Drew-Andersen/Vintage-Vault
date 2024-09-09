@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
 import './home.css'; // CSS file to style the page
 
 const Home = () => {
@@ -7,13 +8,18 @@ const Home = () => {
     <div className="home-container">
       {/* Header */}
       
-
-      {/* Era Section */}
-      <div className="era-buttons">
-        <Button variant="secondary" className='text-dark'>70's era</Button>{' '}
-        <Button variant="secondary" className='text-dark'>80's era</Button>{' '}
-        <Button variant="secondary" className='text-dark'>90's era</Button>{' '}
-        <Button variant="secondary" className='text-dark'>00's era</Button>{' '}
+      {/* Era Section with Shopping Cart */}
+      <div className="era-cart-bar">
+        <div className="era-buttons">
+          <Button variant="secondary" className='text-dark'>70's era</Button>{' '}
+          <Button variant="secondary" className='text-dark'>80's era</Button>{' '}
+          <Button variant="secondary" className='text-dark'>90's era</Button>{' '}
+          <Button variant="secondary" className='text-dark'>00's era</Button>{' '}
+        </div>
+        {/* Shopping Cart Button */}
+        <Button variant="primary" className="cart-button">
+          <FaShoppingCart /> Cart
+        </Button>
       </div>
 
       {/* Build a Collection Section */}
@@ -41,7 +47,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* watches section */}
+      {/* Watches Section */}
       <section className="item-section">
         <h3>Watches</h3>
         <div className="items-grid">
