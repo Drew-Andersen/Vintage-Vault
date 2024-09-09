@@ -2,6 +2,8 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
 import './home.css'; // CSS file to style the page
+import { useNavigate } from 'react-router-dom';
+
 
 const Home = () => {
   const navigate = useNavigate();
