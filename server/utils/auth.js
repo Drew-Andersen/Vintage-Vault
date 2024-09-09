@@ -1,19 +1,4 @@
 const jwt = require('jsonwebtoken');
-<<<<<<< HEAD
-const secret = '';
-const expiration = '30d';
- 
-
-generateToken: function ({ email, name, _id }) {
-    const payload = { email, name, _id };
-    return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
-    process.env.JWT_SECRET, {
-    //   expiresIn:  // Adjust token expiry as needed
-    },
-  };
-  
-  module.exports = generateToken;
-=======
 
 // set token secret and expiration date
 const secret = 'mysecretsshhhhh';
@@ -52,4 +37,3 @@ module.exports = {
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
   },
 };
->>>>>>> aa3889d73e786b01aec488c1e200ff3ef7b5e5ec
