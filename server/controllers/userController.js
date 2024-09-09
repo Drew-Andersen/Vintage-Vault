@@ -11,57 +11,92 @@ module.exports = {
   },
   async getSingleUser(req, res) {
     try {
-      const user = await User.findOne({ _id: req.params.userId })
-        .select('-__v');
-
-      if (!user) {
-        return res.status(404).json({ message: 'No user with that ID' });
+        const user = await User.findById(req.user._id); 
+  
+        if (user) {
+          res.json({
+            _id: user._id,
+            username: user.username,
+            email: user.email,
+          });
+        } else {
+          res.status(404).json({ message: 'User not found' });
+        }
+      } catch (error) {
+        res.status(500).json({ message: 'Server error during fetching profile' });
       }
-
-      res.json(user);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  },
+    },
   // create a new user
   async createUser(req, res) {
     try {
-      const dbUserData = await User.create(req.body);
-      res.json(dbUserData);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  },
-};
-
-const registerUser = async (req, res) => {
-    const { username, email, password } = req.body;
-  
-    try {
-      // Check if the user already exists
-      const userExists = await User.findOne({ email });
-      if (userExists) {
-        return res.status(400).json({ message: 'User already exists' });
-      }
-  
-      // Create a new user
-      const user = await User.create({
-        username,
-        email,
-        password, // Password will be hashed in the model (pre-save hook)
-      });
-  
-      // Respond with the new user info and JWT token
-      res.status(201).json({
+        const user = await User.create({
+            username,
+            email,
+            password, 
+          });
+        const userExists = await User.findOne({ email });
+          if (userExists) {
+            return res.status(400).json({ message: 'User already exists' });
+          }
+    } 
+        res.status(201).json({
         _id: user._id,
         username: user.username,
         email: user.email,
         token: generateToken(user._id), // JWT token for future requests
-      });
-    } catch (error) {
-      res.status(500).json({ message: 'Server error during registration' });
+        });
+        catch (error) {
+        res.status(500).json({ message: 'Server error during registration' });
     }
-  };
+  },
+
+//   const getUserProfile = async (req, res) => {
+//     try {
+//       const user = await User.findById(req.user._id); // req.user is set by protect middleware
+  
+//       if (user) {
+//         res.json({
+//           _id: user._id,
+//           username: user.username,
+//           email: user.email,
+//         });
+//       } else {
+//         res.status(404).json({ message: 'User not found' });
+//       }
+//     } catch (error) {
+//       res.status(500).json({ message: 'Server error during fetching profile' });
+//     }
+//   };
+// };
+
+// const registerUser = async (req, res) => {
+//     const { username, email, password } = req.body;
+  
+//     try {
+//       // Check if the user already exists
+//       const userExists = await User.findOne({ email });
+//       if (userExists) {
+//         return res.status(400).json({ message: 'User already exists' });
+//       }
+  
+//       // Create a new user
+//       const user = await User.create({
+//         username,
+//         email,
+//         password, // Password will be hashed in the model (pre-save hook)
+//       });
+  
+//       // Respond with the new user info and JWT token
+//       res.status(201).json({
+//         _id: user._id,
+//         username: user.username,
+//         email: user.email,
+//         token: generateToken(user._id), // JWT token for future requests
+//       });
+//     } catch (error) {
+//       res.status(500).json({ message: 'Server error during registration' });
+//     }
+//   };
   
   // @desc    Authenticate user & get token
   // @route   POST /api/auth/login
