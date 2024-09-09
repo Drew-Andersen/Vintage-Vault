@@ -35,6 +35,7 @@ module.exports = {
       return res.status(400).json({ message: "Can't find this user" });
     }
 
+
     const correctPw = await user.isCorrectPassword(body.password);
 
     if (!correctPw) {
@@ -43,4 +44,29 @@ module.exports = {
     const token = signToken(user);
     res.json({ token, user });
   }
+
+  },
+
+  //remove user
+  async removeUser(req, res) {
+    try {
+      const user = await User.findOneAndRemove({ _id: req.params.userId });
+
+      if (!user) {
+        return res.status(404).json({ message: 'No user with this id!' });
+      }
+
+      if (!user) {
+        return res
+          .status(404)
+          .json({ message: 'User created but no user with this id!' });
+      }
+
+      res.json({ message: 'User successfully deleted!' });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  }, 
+
+
 };

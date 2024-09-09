@@ -68,11 +68,29 @@ body, html {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   .era-buttons button:hover {
     background-color: #ccc;
   }
-  
+  /*era-cart styles*/
+  .era-cart-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  .cart-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  .cart-button:hover {
+    background-color: #0056b3;
+  }
   /* collection section */
   .collection-builder {
     background-color: #f1f1f1;
@@ -133,13 +151,3 @@ body, html {
     background-color: #ddd;
     margin: 0 auto 10px;
   }
-  
-  /*footer*/
-  .footer {
-    background-color: #f8f8f8;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 16px;
-    color: #555;
-  }
-  
