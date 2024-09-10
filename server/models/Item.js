@@ -10,8 +10,8 @@ const itemSchema = new Schema({
         type: String
     },
     price: {
-        type: String,
-        required: true
+        type: Schema.Types.Decimal128,
+        required: true, 
     },
     category: {
         type: String
