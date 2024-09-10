@@ -2,7 +2,7 @@
     {
       "name": "1970s",
       "description": "Classic items from the groovy 1970s.",
-      "imageURL": "https://example.com/images/70s.jpg",
+      "imageURL": "/images/70s.jpg",
       "items": [
         "64f2308bcf1f2e002f8bc131",
         "64f2308bcf1f2e002f8bc132",
@@ -12,7 +12,7 @@
     {
       "name": "1980s",
       "description": "Iconic memorabilia from the vibrant 1980s.",
-      "imageURL": "https://example.com/images/80s.jpg",
+      "imageURL": "/images/80s.jpg",
       "items": [
         "64f2308bcf1f2e002f8bc134",
         "64f2308bcf1f2e002f8bc135",
@@ -22,7 +22,7 @@
     {
       "name": "1990s",
       "description": "Popular collectibles from the 1990s.",
-      "imageURL": "https://example.com/images/90s.jpg",
+      "imageURL": "/images/90s.jpg",
       "items": [
         "64f2308bcf1f2e002f8bc137",
         "64f2308bcf1f2e002f8bc138",
@@ -32,7 +32,7 @@
     {
       "name": "2000s",
       "description": "Memorabilia from the turn of the millennium.",
-      "imageURL": "https://example.com/images/00s.jpg",
+      "imageURL": "/images/00s.jpg",
       "items": [
         "64f2308bcf1f2e002f8bc140",
         "64f2308bcf1f2e002f8bc141",
