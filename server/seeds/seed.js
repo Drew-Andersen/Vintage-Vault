@@ -56,7 +56,7 @@ db.once("open", async () => {
         items: randomItems,
       };
     });
-    await Era.create(erasWithItems);
+    await Eras.create(erasWithItems);
 
     // Seed the carts and assign random items to each cart
     const cartsWithItems = cartSeeds.map(cart => {
