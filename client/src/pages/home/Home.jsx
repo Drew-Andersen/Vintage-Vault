@@ -2,7 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
 import './home.css'; // CSS file to style the page
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
@@ -16,18 +16,6 @@ const Home = () => {
   
   return (
     <div className="home-container">
-      {/* Header */}
-      
-      {/* Era Section with Shopping Cart */}
-      <div className="era-cart-bar">
-        <div className="era-buttons">
-          <Button variant="secondary" className='text-dark'>70's era</Button>{' '}
-          <Button variant="secondary" className='text-dark'>80's era</Button>{' '}
-          <Button variant="secondary" className='text-dark'>90's era</Button>{' '}
-          <Button variant="secondary" className='text-dark'>00's era</Button>{' '}
-        </div>
-
-      </div>
 
       {/* Build a Collection Section */}
       <div className="collection-builder">
