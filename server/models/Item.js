@@ -16,6 +16,10 @@ const itemSchema = new Schema({
     category: {
         type: String
     },
+    stock: { 
+        type: Number, 
+        required: true 
+    },
     imageURL: {
         type: String
     }
