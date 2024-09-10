@@ -5,7 +5,7 @@ const {
     createEra,
     updateEra,
     removeEra,
-} = require('../../controllers/itemController');
+} = require('../../controllers/eraController');
 
 router.route('/').get(getAllEras);
 router.route('/:id').get(getEra);
