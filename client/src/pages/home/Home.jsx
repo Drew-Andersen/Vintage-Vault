@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
 import './home.css'; // CSS file to style the page
 import { Link, useNavigate } from 'react-router-dom';
+import CarouselSlider from '../../components/carousel/Carousel';
 
 
 const Home = () => {
@@ -16,6 +17,8 @@ const Home = () => {
   
   return (
     <div className="home-container">
+
+    <CarouselSlider />
 
       {/* Build a Collection Section */}
       <div className="collection-builder">

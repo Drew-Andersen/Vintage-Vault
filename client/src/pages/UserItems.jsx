@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
 import './UserItems.css';
 
 const UserItems = () => {
@@ -42,6 +43,7 @@ const UserItems = () => {
               <button className="remove-item" onClick={() => removeItem(item.id)}>Remove</button>
             </div>
           ))}
+          <Button>Checkout</Button>
         </div>
       )}
     </div>
