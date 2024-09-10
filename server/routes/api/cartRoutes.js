@@ -4,7 +4,7 @@ const {
   addItemToCart,
   removeItemFromCart,
   updateItemQuantity,
-} = require('../controllers/cartController');
+} = require('../../controllers/cartController');
 
 
 router.route('/').get(getCart);

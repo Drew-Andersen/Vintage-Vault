@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import './login.css';
 import { loginUser } from '../utils/API';
-// import Auth from '../utils/auth';
+import Auth from '../utils/auth';
 
 export default function Login() {
     const [userFormData, setUserFormData] = useState({ email: '', password: '' });

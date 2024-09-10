@@ -7,7 +7,7 @@ const Item = require('../models/Item');
 module.exports = {
     async getCart(req, res) {
         try {
-            const cart = await Cart.findOne({ user: req.user._id }).populate('items.product');
+            const cart = await Cart.findOne({ user: req.user._id }).populate('items.item');
             if (!cart) {
                 return res.status(404).json({ message: 'Cart not found' });
             }
