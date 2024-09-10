@@ -18,18 +18,8 @@ const Home = () => {
   return (
     <div className="home-container">
 
+    {/* Build a Collection Section */}
     <CarouselSlider />
-
-      {/* Build a Collection Section */}
-      <div className="collection-builder">
-        <h2>80's</h2>
-        <div className="collection-items">
-          <div className="collection-item">Records</div>
-          <div className="collection-item">Clothing</div>
-          <div className="collection-item">Games</div>
-          <div className="arrow-right">➔</div>
-        </div>
-      </div>
 
       {/* Comic Books Section */}
       <section className="item-section">
