@@ -3,6 +3,7 @@ const {
   createUser,
   getSingleUser,
   login,
+  getUsers,
   removeUser
 } = require('../../controllers/userController');
 
@@ -13,7 +14,7 @@ const { authMiddleware } = require('../../utils/auth');
 router.route('/').post(createUser).put(authMiddleware);
 
 router.route('/login').post(login);
-router.route('/').get(getUsers).post(createUser);
+router.route('/').get(getUsers);
 router.route('/:userId').delete(removeUser);
 
 router.route('/me').get(authMiddleware, getSingleUser);

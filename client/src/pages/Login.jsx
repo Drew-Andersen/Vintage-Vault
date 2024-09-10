@@ -53,7 +53,7 @@ export default function Login() {
             <div className="d-flex justify-content-center align-items-center vh-100">
                 <div className="form-div bg-white p-3 rounded border">
                     <h2>Login</h2>
-                    <Form>
+                    <Form onSubmit={handleFormSubmit}>
                         <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
                             Something went wrong with your login credentials!
                         </Alert>
