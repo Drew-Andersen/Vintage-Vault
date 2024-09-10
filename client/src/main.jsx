@@ -12,6 +12,10 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Error from './pages/Error';
 import UserItems from './pages/UserItems';
+import Era70s from './pages/Era70s';
+import Era80s from './pages/Era80s';
+import Era90s from './pages/Era90s';
+import Era00s from './pages/Era00s';
 
 // Defining the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -35,6 +39,22 @@ const router = createBrowserRouter([
       {
         path: '/cart',
         element: <UserItems />
+      },
+      {
+        path: '/era-70',
+        element: <Era70s />
+      },
+      {
+        path: '/era-80',
+        element: <Era80s />
+      },
+      {
+        path: '/era-90',
+        element: <Era90s />
+      },
+      {
+        path: '/era-00',
+        element: <Era00s />
       }
     ]
   }
