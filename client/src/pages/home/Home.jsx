@@ -10,7 +10,7 @@ const Home = () => {
 
   // navigate to cart page on cart button click
   const goToCart = () => {
-    navigate('/User');
+    navigate('/cart');
   };
   
   
@@ -26,10 +26,7 @@ const Home = () => {
           <Button variant="secondary" className='text-dark'>90's era</Button>{' '}
           <Button variant="secondary" className='text-dark'>00's era</Button>{' '}
         </div>
-        {/* Shopping Cart Button */}
-        <Button variant="primary" className="cart-button" onClick={goToCart}>
-          <FaShoppingCart /> Cart
-        </Button>
+
       </div>
 
       {/* Build a Collection Section */}

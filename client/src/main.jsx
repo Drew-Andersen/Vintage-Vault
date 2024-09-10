@@ -11,6 +11,7 @@ import Home from './pages/home/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Error from './pages/Error';
+import UserItems from './pages/UserItems';
 
 // Defining the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/signup',
         element: <Signup />
+      },
+      {
+        path: '/cart',
+        element: <UserItems />
       }
     ]
   }
