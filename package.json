@@ -19,6 +19,8 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "react-multi-carousel": "^2.8.5"
   }
-  
 }
