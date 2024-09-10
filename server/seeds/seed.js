@@ -4,15 +4,15 @@ const userSeeds = require("./userSeeds.json");
 const itemSeeds = require("./itemSeeds.json");
 const eraSeeds = require("./eraSeeds.json");
 const cartSeeds = require("./cartSeeds.json");
-const cleanDB = require("./cleanDB");
+// const cleanDB = require("./cleanDB");
 
 db.once("open", async () => {
   try {
     // Clean the Item and User collections
-    await cleanDB("Item", "items");
-    await cleanDB("User", "users");
-    await cleanDB("Era", "eras");
-    await cleanDB("Cart", "cart");
+    // await cleanDB("Item", "items");
+    // await cleanDB("User", "users");
+    // await cleanDB("Era", "eras");
+    // await cleanDB("Cart", "cart");
 
     // Seed the items first
     const createdItems = await Item.create(itemSeeds);
