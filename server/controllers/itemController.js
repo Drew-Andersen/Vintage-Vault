@@ -24,14 +24,14 @@ module.exports = {
     }
   },
   // create a new item
-  async createItem(req, res) {
-    try {
-      const dbItemData = await Item.create(req.body);
-      res.json(dbItemData);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  },
+  // async createItem(req, res) {
+  //   try {
+  //     const dbItemData = await Item.create(req.body);
+  //     res.json(dbItemData);
+  //   } catch (err) {
+  //     res.status(500).json(err);
+  //   }
+  // },
  
   //update Item
   async updateItem(req, res) {
@@ -74,5 +74,33 @@ module.exports = {
     }
   }, 
 
+  async postItem(req, res) {
+    try {
+      const { name, description, price, category, imageURL, era, sellerId } = req.body;
 
+    // Find the seller by their ID (assuming sellerId is passed in the request body)
+      const seller = await User.findById(sellerId);
+    if (!seller) {
+      return res.status(404).json({ message: 'Seller not found' });
+    }
+
+    // Create the new item
+    const newItem = await Item.create({
+      name,
+      description,
+      price,
+      category,
+      imageURL,
+      era,
+      seller
+    });
+
+    // Send a response with the created item
+    res.status(201).json(newItem);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Server error, could not post the item' });
+  }
+
+  }
 };
