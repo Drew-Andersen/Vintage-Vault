@@ -10,17 +10,20 @@ const itemSchema = new Schema({
         type: String
     },
     price: {
-        type: Schema.Types.Decimal128,
+        type: Schema.Types.String,
         required: true, 
     },
     category: {
         type: String
     },
-    stock: { 
-        type: Number, 
-        required: true 
-    },
+    // stock: { 
+    //     type: Number, 
+    //     required: true 
+    // },
     imageURL: {
+        type: String
+    },
+    era: {
         type: String
     }
 })
