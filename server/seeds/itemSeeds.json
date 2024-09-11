@@ -5,7 +5,8 @@
         "price": "$11.98",
         "category": "Clothing",
         "imageURL": "https://nostalgia-store.com/item-1.jpg",
-        "era": "80"
+        "era": "80",
+        "seller": "66e09f18107f3853a4e484bb"
     },
     {
         "name": "Vintage Item 2",
@@ -13,7 +14,8 @@
         "price": "$17.97",
         "category": "Electronics",
         "imageURL": "https://nostalgia-store.com/item-2.jpg",
-        "era": "80"
+        "era": "80",
+        "seller": "66e09f18107f3853a4e484b9"
     },
     {
         "name": "Vintage Item 3",
@@ -21,7 +23,8 @@
         "price": "$23.96",
         "category": "Music",
         "imageURL": "https://nostalgia-store.com/item-3.jpg",
-        "era": "90"
+        "era": "90",
+        "seller": "66e09f18107f3853a4e484b7"
     },
     {
         "name": "Vintage Item 4",
@@ -29,7 +32,8 @@
         "price": "$29.95",
         "category": "Movies",
         "imageURL": "https://nostalgia-store.com/item-4.jpg",
-        "era": "00"
+        "era": "00",
+        "seller": "66e09f18107f3853a4e484b8"
     },
     {
         "name": "Vintage Item 5",
@@ -37,7 +41,8 @@
         "price": "$35.94",
         "category": "Toys",
         "imageURL": "https://nostalgia-store.com/item-5.jpg",
-        "era": "70"
+        "era": "70",
+        "seller": "66e09f18107f3853a4e484b5"
     },
     {
         "name": "Vintage Item 6",
@@ -45,7 +50,8 @@
         "price": "$41.93",
         "category": "Clothing",
         "imageURL": "https://nostalgia-store.com/item-6.jpg",
-        "era": "70"
+        "era": "70",
+        "seller": "66e09f18107f3853a4e484b2"
     },
     {
         "name": "Vintage Item 7",
@@ -53,7 +59,8 @@
         "price": "$47.92",
         "category": "Electronics",
         "imageURL": "https://nostalgia-store.com/item-7.jpg",
-        "era": "90"
+        "era": "90",
+        "seller": "66e09f18107f3853a4e484b4"
     },
     {
         "name": "Vintage Item 8",
@@ -61,7 +68,8 @@
         "price": "$53.91",
         "category": "Music",
         "imageURL": "https://nostalgia-store.com/item-8.jpg",
-        "era": "00"
+        "era": "00",
+        "seller": "66e09f18107f3853a4e484b3"
     },
     {
         "name": "Vintage Item 9",
@@ -69,6 +77,7 @@
         "price": "$59.9",
         "category": "Movies",
         "imageURL": "https://nostalgia-store.com/item-9.jpg",
-        "era": "70"
+        "era": "70",
+        "seller": "66e09f18107f3853a4e484b6"
     }
 ]

@@ -92,7 +92,7 @@ module.exports = {
       category,
       imageURL,
       era,
-      seller: seller._id
+      seller
     });
 
     // Send a response with the created item
