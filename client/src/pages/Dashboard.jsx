@@ -1,6 +1,6 @@
 import { Form, Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-import { postItem, getAllItems, removeItem } from '../utils/API';
+import { postItem, getAllItems /* Change to getAllUserItems*/, removeItem } from '../utils/API';
 
 export default function Dashboard() {
     const [userFormData, setUserFormData] = useState({
@@ -22,7 +22,7 @@ export default function Dashboard() {
 
     const itemRetreival = async (e) => {
         try {
-            const response = await getAllItems();
+            const response = await getAllItems(); // will need to change the name of getAllItems to getAllUserItems
             const items = await response.json();
             console.log(items);
             setAllItems(items);
@@ -62,12 +62,14 @@ export default function Dashboard() {
         }
     }
 
-    const handleDeleteItem = (e) => {
-        e.preventDefault();
-        
+    // Need to work on Delete function
+    const handleDeleteItem = (itemId) => {
+       
         console.log('delete');
         try {
-            const response = removeItem({ ...userFormData, _id }); // _id is not defined
+            const response = removeItem(itemId); 
+            console.log(itemId); // Returning undefined - Need to fix          
+            
             if (!response.ok) {
                 throw new Error('Something went wrong deleting an item.');
             }
