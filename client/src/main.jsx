@@ -69,4 +69,3 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 );
-// routes to connect UserItems.jsx to cart button
