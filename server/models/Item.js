@@ -16,10 +16,11 @@ const itemSchema = new Schema({
     category: {
         type: String
     },
-    // stock: { 
-    //     type: Number, 
-    //     required: true 
-    // },
+    seller: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
+      },
     imageURL: {
         type: String
     },
