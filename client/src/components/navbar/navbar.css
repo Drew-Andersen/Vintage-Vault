@@ -5,3 +5,22 @@
 li {
     list-style-type: none;
 }
+.search-bar {
+    margin-top: 20px;  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%; 
+  }
+  
+  .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+  }
+  
