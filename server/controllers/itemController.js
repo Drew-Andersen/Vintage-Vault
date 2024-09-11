@@ -76,7 +76,7 @@ module.exports = {
 
   async postItem(req, res) {
     try {
-      const { name, description, price, imageURL, category, sellerId } = req.body;
+      const { name, description, price, category, imageURL, era, sellerId } = req.body;
 
     // Find the seller by their ID (assuming sellerId is passed in the request body)
       const seller = await User.findById(sellerId);
@@ -89,8 +89,9 @@ module.exports = {
       name,
       description,
       price,
-      imageURL,
       category,
+      imageURL,
+      era,
       seller: seller._id
     });
 
@@ -99,5 +100,7 @@ module.exports = {
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Server error, could not post the item' });
+  }
+
   }
 };
