@@ -24,14 +24,14 @@ module.exports = {
     }
   },
   // create a new item
-  async createItem(req, res) {
-    try {
-      const dbItemData = await Item.create(req.body);
-      res.json(dbItemData);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  },
+  // async createItem(req, res) {
+  //   try {
+  //     const dbItemData = await Item.create(req.body);
+  //     res.json(dbItemData);
+  //   } catch (err) {
+  //     res.status(500).json(err);
+  //   }
+  // },
  
   //update Item
   async updateItem(req, res) {
