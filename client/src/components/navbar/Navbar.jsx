@@ -20,10 +20,10 @@ export default function Navbar() {
                 <h1 className='px-4 pt-2'>Vintage Vault</h1>
 
                   {/* Search Bar */}
-                  <div className="search-bar">
+                  <div className="search-bar w-50">
                         <input
                             type="text"
-                            className="search-input"
+                            className="search-input w-25"
                             placeholder="Search for anything"
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}

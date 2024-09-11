@@ -1,25 +1,7 @@
 .bg-navbar {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
-.search-bar {
-    margin-top: 20px;  
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    width: 50%; 
-  }
-  
-  .search-input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .search-bar button {
-    padding: 8px 12px;
-  }
-  

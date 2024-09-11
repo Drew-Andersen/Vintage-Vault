@@ -50,7 +50,7 @@ export default function Login() {
 
     return (
         <>
-            <div className="d-flex justify-content-center align-items-center vh-100">
+            <div className="d-flex justify-content-center align-items-center mt-5">
                 <div className="form-div bg-white p-3 rounded border">
                     <h2>Login</h2>
                     <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
