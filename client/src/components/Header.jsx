@@ -24,17 +24,6 @@ export default function Header() {
                         <Link to='era-00'><Button variant="secondary" className='text-dark'>00's era</Button>{' '}</Link>
                     </div>
 
-                    {/* Search Bar */}
-                    <div className="search-bar">
-                        <input
-                            type="text"
-                            className="search-input"
-                            placeholder="Search for anything"
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                        />
-                        <Button variant="primary" onClick={handleSearch}>Search</Button>
-                    </div>
                 </div>
             </div>
         </>

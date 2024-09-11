@@ -43,7 +43,7 @@ export default function Dashboard() {
             <div className='container'>
                 <div className='row'>
                     <div className='posted-items col-6 mt-5'>
-                        Items you have posted:
+                        <h4>Items you have posted:</h4>
                     </div>
                     <div className="d-flex justify-content-center align-items-center vh-100 col-6">
                         <div className="bg-white p-3 rounded w-100 border">

@@ -1,11 +1,18 @@
 import { Link, useLocation } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 import './navbar.css';
 
 import Auth from '../../utils/auth';
 
 export default function Navbar() {
     const currentPage = useLocation().pathname;
+    const [searchQuery, setSearchQuery] = useState('');
+
+    const handleSearch = () => {
+        console.log(`Searching for: ${searchQuery}`);
+    };
 
     return (
         <>
