@@ -18,10 +18,13 @@ export default function Navbar() {
                     {Auth.loggedIn() ? (
                         <>
                             <li className='px-3 py-1 mx-1'>
+                                <Link to='/dashboard' className={currentPage === '/dashboard' ? 'nav-link active' : 'nav-link'}>Dashboard</Link>
+                            </li>
+                            <li className='px-3 py-1 mx-1'>
                                 <Link to='/' className={currentPage === '/' ? 'nav-link active' : 'nav-link'} onClick={Auth.logout}>Logout</Link>
                             </li>
                             <li className='px-3 py-1 mx-1'>
-                                <Link to='/cart' className={currentPage === '/cart' ? 'nav-link active' : 'nav-link'}><FaShoppingCart /> Cart</Link>
+                                <Link to='/cart' className={currentPage === '/cart' ? 'nav-link active' : 'nav-link'}><FaShoppingCart />Cart</Link>
                             </li>
                         </>
                     ) : (
