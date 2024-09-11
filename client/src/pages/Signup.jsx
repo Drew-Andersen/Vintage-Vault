@@ -52,7 +52,7 @@ export default function Signup() {
 
     return (
         <>
-            <div className="d-flex justify-content-center align-items-center vh-100">
+            <div className="d-flex justify-content-center align-items-center mt-5">
                 <div className="bg-white p-3 rounded w-25 border">
                     <h2>Sign-up</h2>
                     <Form noValidate validated={validated} onSubmit={handleFormSubmit}>

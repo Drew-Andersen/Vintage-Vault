@@ -9,7 +9,8 @@ export default function Dashboard() {
         price: '',
         category: '',
         image: '',
-        era: ''
+        era: '',
+        era2: ''
     });
     const [validated] = useState(false);
 
@@ -43,11 +44,11 @@ export default function Dashboard() {
         <>
             <div className='container'>
                 <div className='row'>
-                    <div className='posted-items col-6 mt-5 border'>
+                    <div className='posted-items col-6 mt-5 border rounded'>
                         <h4 className='text-center'>Items you have posted:</h4>
                     </div>
                     <div className='d-block col-6 mt-5'>
-                        <div className="form-container d-flex justify-content-center align-items-center vh-100">
+                        <div className="form-container d-flex justify-content-center align-items-center">
                             <div className="bg-white p-3 rounded w-100 border">
                                 <h2 className='text-center'>List an Item</h2>
                                 <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
@@ -131,40 +132,50 @@ export default function Dashboard() {
                                         <Form.Check
                                             inline
                                             type='radio'
-                                            label="1970's"
+                                            label="1970s"
+                                            value='1970s'
                                             name='era'
                                             id='option-70s'
                                         />
                                         <Form.Check
                                             inline
                                             type='radio'
-                                            label="1980's"
+                                            label="1980s"
+                                            value='1980s'
                                             name='era'
                                             id='option-80s'
                                         />
                                         <Form.Check
                                             inline
                                             type='radio'
-                                            label="1990's"
+                                            label="1990s"
+                                            value='1990s'
                                             name='era'
                                             id='option-90s'
                                         />
                                         <Form.Check
                                             inline
                                             type='radio'
-                                            label="2000's"
+                                            label="2000s"
+                                            value='2000s'
                                             name='era'
                                             id='option-00s'
                                         />
-
-                                        {/* <Form.Select>
-                                        <option disabled>Choose an era</option>
-                                        <option value='1970s'>1970's</option>
-                                        <option value='1980s'>1980's</option>
-                                        <option value='1990s'>1990's</option>
-                                        <option value='2000s'>2000's</option>
-                                    </Form.Select> */}
                                     </Form.Group>
+
+                                    <Form.Group className="mb-3">
+                                        <Form.Label htmlFor='item-era2.0'>
+                                            <strong>ERA 2.0</strong>
+                                        </Form.Label>
+                                        <Form.Select name='era2' onChange={handleInputChange}>
+                                            <option disabled>Choose an era</option>
+                                            <option value='1970s' >1970s</option>
+                                            <option value='1980s'>1980s</option>
+                                            <option value='1990s'>1990s</option>
+                                            <option value='2000s'>2000s</option>
+                                        </Form.Select>
+                                    </Form.Group>
+
 
                                     <Button
                                         type="submit"
