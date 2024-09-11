@@ -18,6 +18,7 @@ export default function Navbar() {
         <>
             <nav className='w-100 d-flex justify-content-between'>
                 <h1 className='px-4 pt-2'>Vintage Vault</h1>
+
                   {/* Search Bar */}
                   <div className="search-bar">
                         <input
@@ -29,6 +30,7 @@ export default function Navbar() {
                         />
                         <Button variant="primary" onClick={handleSearch}>Search</Button>
                     </div>
+
                 <ul className='d-flex justify-content-end p-2 bg-navbar'>
                     <li className='px-3 py-1 mx-1'>
                         <Link to='/' className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Home</Link>
