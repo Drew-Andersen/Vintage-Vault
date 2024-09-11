@@ -8,7 +8,7 @@ const {
     postItem
 } = require('../../controllers/itemController');
 
-router.route('/').get(getAllItems);
+router.route('/:user_id').get(getAllItems);
 router.route('/:id').get(getItem);
 // router.route('/').post(createItem);
 router.route('/:id').put(updateItem);

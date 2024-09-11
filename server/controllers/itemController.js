@@ -1,9 +1,12 @@
 const Item = require('../models/Item');
+const User = require('../models/User');
 
 module.exports = {
   async getAllItems(req, res,) {
     try {
-      const items = await Item.find();
+      const items = await Item.find({seller: req.params.user_id});
+      console.log(items);
+      
       res.json(items);
     } catch (err) {
       res.status(500).json(err);
@@ -77,10 +80,13 @@ module.exports = {
   async postItem(req, res) {
     try {
       const { name, description, price, category, imageURL, era, sellerId } = req.body;
-
+      console.log(req.body);
+      
     // Find the seller by their ID (assuming sellerId is passed in the request body)
       const seller = await User.findById(sellerId);
     if (!seller) {
+      console.log('seller not found');
+      
       return res.status(404).json({ message: 'Seller not found' });
     }
 
@@ -104,3 +110,14 @@ module.exports = {
 
   }
 };
+
+// async getAllItems(req, res,) {
+//   try {
+//     const items = await Item.find();
+//     console.log(items);
+    
+//     res.json(items);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// // },

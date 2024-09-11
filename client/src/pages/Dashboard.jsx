@@ -1,6 +1,6 @@
 import { Form, Button } from 'react-bootstrap';
-import { useState } from 'react';
-import { createItem } from '../utils/API';
+import { useState, useEffect } from 'react';
+import { postItem, getAllItems, removeItem } from '../utils/API';
 
 export default function Dashboard() {
     const [userFormData, setUserFormData] = useState({
@@ -8,11 +8,30 @@ export default function Dashboard() {
         description: '',
         price: '',
         category: '',
-        image: '',
+        imageURL: '',
         era: '',
-        era2: ''
+        // era2: '',
+        sellerId: ''
     });
     const [validated] = useState(false);
+    const [allItems, setAllItems] = useState([]);
+
+    useEffect(() => {
+        itemRetreival();
+    }, [])
+
+    const itemRetreival = async (e) => {
+        try {
+            const response = await getAllItems();
+            const items = await response.json();
+            console.log(items);
+            setAllItems(items);
+
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -27,14 +46,31 @@ export default function Dashboard() {
             e.preventDefault();
             e.stopPropagation();
         }
+        const user = JSON.parse(localStorage.getItem('user'));
 
         try {
-            const response = await createItem(userFormData); // change to postItem
+            const response = await postItem({ ...userFormData, sellerId: user._id });
 
             if (!response.ok) {
                 throw new Error('Something went wrong adding an item.');
             }
             console.log(userFormData);
+            console.log(response);
+            itemRetreival();
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
+    const handleDeleteItem = (e) => {
+        e.preventDefault();
+        
+        console.log('delete');
+        try {
+            const response = removeItem({ ...userFormData, _id }); // _id is not defined
+            if (!response.ok) {
+                throw new Error('Something went wrong deleting an item.');
+            }
         } catch (err) {
             console.log(err);
         }
@@ -46,6 +82,24 @@ export default function Dashboard() {
                 <div className='row'>
                     <div className='posted-items col-6 mt-5 border rounded'>
                         <h4 className='text-center'>Items you have posted:</h4>
+                        {allItems.length > 0 && allItems.map((item) => (
+                            <div className='d-flex justify-content-center' key={item._id}>
+                                <div className='item-card m-2 w-50'>
+                                    <div className='item-image'>
+                                        <img src={item.imageURL} alt={item.name} />
+                                    </div>
+                                    <div className='text-center'>
+                                        <h5>{item.name}</h5>
+                                        <p>{item.description}</p>
+                                        <p>{item.price}</p>
+                                    </div>
+                                    <div className='text-center'>
+                                        <button className='btn btn-danger' onClick={handleDeleteItem}>Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                        )}
                     </div>
                     <div className='d-block col-6 mt-5'>
                         <div className="form-container d-flex justify-content-center align-items-center">
@@ -117,7 +171,7 @@ export default function Dashboard() {
                                         </Form.Label>
                                         <Form.Control
                                             type='file'
-                                            name='image'
+                                            name='imageURL'
                                             className='form-control rounded'
                                             onChange={handleInputChange}
                                             multiple
@@ -128,7 +182,17 @@ export default function Dashboard() {
                                     <Form.Group className="mb-3 d-inline">
                                         <Form.Label htmlFor='item-era'>
                                             <strong>Era</strong>
-                                        </Form.Label> <br />
+                                        </Form.Label>
+                                        <Form.Control
+                                            type='text'
+                                            name='era'
+                                            className='form-control rounded'
+                                            onChange={handleInputChange}
+                                            placeholder='Era'
+                                            required
+                                        />
+                                    </Form.Group>
+                                    {/* <br />
                                         <Form.Check
                                             inline
                                             type='radio'
@@ -160,10 +224,10 @@ export default function Dashboard() {
                                             value='2000s'
                                             name='era'
                                             id='option-00s'
-                                        />
-                                    </Form.Group>
+                                        /> */}
+                                    {/* </Form.Group> */}
 
-                                    <Form.Group className="mb-3">
+                                    {/* <Form.Group className="mb-3">
                                         <Form.Label htmlFor='item-era2.0'>
                                             <strong>ERA 2.0</strong>
                                         </Form.Label>
@@ -174,7 +238,7 @@ export default function Dashboard() {
                                             <option value='1990s'>1990s</option>
                                             <option value='2000s'>2000s</option>
                                         </Form.Select>
-                                    </Form.Group>
+                                    </Form.Group> */}
 
 
                                     <Button

@@ -34,8 +34,9 @@ export default function Login() {
             }
 
             const { token, user } = await response.json();
+            localStorage.setItem('user', user);
             console.log(user);
-            Auth.login(token);
+            Auth.login(token, user);
         } catch (err) {
             console.error(err);
             setShowAlert(true);
