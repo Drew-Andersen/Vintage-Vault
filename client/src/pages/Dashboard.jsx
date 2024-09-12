@@ -15,6 +15,8 @@ export default function Dashboard() {
     });
     const [validated] = useState(false);
     const [allItems, setAllItems] = useState([]);
+    const [image, setImage] = useState(null);
+    const [imagePreview, setImagePreview] = useState(null);
 
     useEffect(() => {
         itemRetreival();
@@ -38,6 +40,14 @@ export default function Dashboard() {
         setUserFormData({ ...userFormData, [name]: value })
     }
 
+    const handleImageChange = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            setImage(file);
+            setImagePreview(URL.createObjectURL(file));
+        }
+    }
+
     const handleFormSubmit = async (e) => {
         e.preventDefault();
 
@@ -47,7 +57,7 @@ export default function Dashboard() {
             e.stopPropagation();
         }
         const user = JSON.parse(localStorage.getItem('user'));
-        
+
 
         try {
             const response = await postItem({ ...userFormData, sellerId: user._id });
@@ -65,12 +75,12 @@ export default function Dashboard() {
 
     // Need to work on Delete function
     const handleDeleteItem = (itemId) => {
-       
+
         console.log('delete');
         try {
-            const response = removeItem(itemId); 
+            const response = removeItem(itemId);
             console.log(itemId); // Returning undefined - Need to fix          
-            
+
             if (!response.ok) {
                 throw new Error('Something went wrong deleting an item.');
             }
@@ -93,11 +103,11 @@ export default function Dashboard() {
                                     </div>
                                     <div className='text-center'>
                                         <h5>{item.name}</h5>
-                                        <p>{item.description}</p>
+                                        <p>{item.description} from the {item.era} era.</p>
                                         <p>{item.price}</p>
                                     </div>
                                     <div className='text-center'>
-                                        <button className='btn btn-danger' onClick={handleDeleteItem}>Delete</button>
+                                        <button className='btn btn-danger' onClick={() => handleDeleteItem(item._id)}>Delete</button>
                                     </div>
                                 </div>
                             </div>
@@ -175,12 +185,21 @@ export default function Dashboard() {
                                         <Form.Control
                                             type='file'
                                             name='imageURL'
+                                            accept='image/*'
                                             className='form-control rounded'
-                                            onChange={handleInputChange}
-                                            multiple
+                                            onChange={handleImageChange}
                                             required
                                         />
                                     </Form.Group>
+                                    {imagePreview && (
+                                        <div className="text-center my-3">
+                                            <img
+                                                src={imagePreview}
+                                                alt="Image preview"
+                                                style={{ maxWidth: '100%', maxHeight: '400px' }}
+                                            />
+                                        </div>
+                                    )}
 
                                     <Form.Group className="mb-3 d-inline">
                                         <Form.Label htmlFor='item-era'>
@@ -188,13 +207,18 @@ export default function Dashboard() {
                                         </Form.Label>
                                         <Form.Control
                                             type='text'
+                                            id='item-era'
                                             name='era'
                                             className='form-control rounded'
                                             onChange={handleInputChange}
-                                            placeholder='Era'
+                                            placeholder='Enter era (70, 80, 90, or 00)'
+                                            pattern='70|80|90|00'
                                             required
                                         />
                                     </Form.Group>
+                                    <Form.Control.Feedback type='invalid'>
+                                        Please enter a valid value: 70, 80, 90, 00.
+                                    </Form.Control.Feedback>
                                     {/* <br />
                                         <Form.Check
                                             inline
