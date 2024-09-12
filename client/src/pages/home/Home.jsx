@@ -9,18 +9,12 @@ const Home = () => {
 
   // Needed for itemRetreival and mapping over items
   const [allItems, setAllItems] = useState([]);
-  const [cart, setCart] = useState([]);
 
   // Needed for loading items on the page on page load
   useEffect(() => {
     console.log(`Fetching items...`);
     itemRetreival();
   }, [])
-
-  // navigate to cart page on cart button click
-  const goToCart = () => {
-    navigate('/cart');
-  };
 
   /* Needed to map over all items */
   const itemRetreival = async () => {
@@ -36,13 +30,9 @@ const Home = () => {
   }
 
   /* Need a function to add an item to the cart */
-  const handleAddItemToCart = (item) => {
+  const handleAddItemToCart = () => {
     console.log(`Adding item to cart`, item)
-    setCart(prevCart => {
-      const updatedCart = [...prevCart, item];
-      localStorage.setItem('cart', JSON.stringify(updatedCart));
-      return updatedCart;
-    })
+    
   }
 
   return (
@@ -65,7 +55,7 @@ const Home = () => {
                 <p>{item.price}</p>
               </div>
               <div className='text-center'>
-                  <button className='btn btn-primary' onClick={() => handleAddItemToCart(item)}>Add to Cart</button>
+                  <button className='btn btn-primary add-to-cart' onClick={() => handleAddItemToCart(item)}>Add to Cart</button>
                   {/* Add onClick={handleAddItemToCart(item)} to the button */}
                 </div> 
             </div>

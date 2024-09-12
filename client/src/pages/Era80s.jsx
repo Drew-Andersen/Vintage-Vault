@@ -40,7 +40,7 @@ export default function Era80s() {
                 <div className="items-grid">
                     {era00Items.length > 0 ? (
                         era00Items.map((item) => (
-                            <div className="item-card" key={item.id}> {/* Use a unique identifier */}
+                            <div className="item-card" key={item._id}> {/* Use a unique identifier */}
                                 <div className='item-image'>
                                     <img src={item.imageURL} alt={item.name} />
                                 </div>
