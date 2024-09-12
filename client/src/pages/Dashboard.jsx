@@ -17,6 +17,7 @@ export default function Dashboard() {
     const [allItems, setAllItems] = useState([]);
     const [image, setImage] = useState(null);
     const [imagePreview, setImagePreview] = useState(null);
+    const [items, setItems] = useState([]);
 
     useEffect(() => {
         itemRetreival();
@@ -77,16 +78,8 @@ export default function Dashboard() {
     const handleDeleteItem = (itemId) => {
 
         console.log('delete');
-        try {
-            const response = removeItem(itemId);
-            console.log(itemId); // Returning undefined - Need to fix          
-
-            if (!response.ok) {
-                throw new Error('Something went wrong deleting an item.');
-            }
-        } catch (err) {
-            console.log(err);
-        }
+        const filteredItems = items.filter(item => item._id !== itemId);
+    setItems(filteredItems);
     }
 
     return (
