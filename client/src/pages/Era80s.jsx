@@ -34,7 +34,7 @@ export default function Era80s() {
     return (
         <>
             <section className="item-section">
-                <h3 className="text-center my-4">70's Era</h3>
+                <h3 className="text-center my-4">80's Era</h3>
                 {loading && <p>Loading items...</p>}
                 {error && <p className="error">{error}</p>}
                 <div className="items-grid">
