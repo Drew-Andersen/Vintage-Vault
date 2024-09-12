@@ -5,11 +5,6 @@ import { useState } from 'react';
 import './Header.css'; // Custom CSS for the header
 
 export default function Header() {
-    const [searchQuery, setSearchQuery] = useState('');
-
-    const handleSearch = () => {
-        console.log(`Searching for: ${searchQuery}`);
-    };
 
     return (
         <>

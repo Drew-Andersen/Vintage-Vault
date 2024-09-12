@@ -28,12 +28,47 @@ export const loginUser = (userData) => {
     });
 };
 
-export const createItem = (itemData) => {
-    return fetch('/api/items', {
+export const postItem = (itemData) => {
+    return fetch('/api/items/post-items', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(itemData)
+    })
+
+}
+
+export const getAllUserItems = async () => { // Change to getAllUserItems
+    const user = JSON.parse(localStorage.getItem('user'));
+    
+    const data = await fetch(`/api/items/${user._id}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+    return data;
+}
+
+export const getAllItems = async () => {
+    const data = await fetch('/api/items', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    return data;
+}
+
+export const removeItem = async () => {
+    const item = window.location.pathname.split('/');
+    console.log(item[2]);
+    
+    const data = await fetch(`/api/items/${item._id}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+        }
     })
 }
