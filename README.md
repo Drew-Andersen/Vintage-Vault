@@ -17,16 +17,13 @@
 <!-- PROJECT LOGO -->
 
 <div align="center">
-  <a href="">
-    <img src="./client/src/assets/images/parsr-logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">PARSR</h3>
+  <h3 align="center">Vintage Vault</h3>
 
   <p align="center">
-    Vintage Vault    <br />
+        <br />
     <a href="">
-      <img src="" alt="Logo" width="80" height="80">
+      <img src="./client/public/imagees/Logo.png" alt="Logo" width="80" height="80">
     </a><br />
     Brought to you by Nostalgic-Devs<br />
     <a href="https://github.com/Drew-Andersen/Vintage-Vault"><strong>Explore the docs »</strong></a>
@@ -73,16 +70,15 @@
 <!-- Add screenshots using the following format: -->
 <!-- ![Screenshot alt description](directPathOfScreenshots) -->
 
-This project was built with React, Mongo DB
-It's currently not deployed until the prototype MVP is completed.
+This project was built using the MERN stack (MongoDB, Express, React, Node). <br />
+Deployed Application located at https://vintage-vault.onrender.com/.
 
-### Built With
+### Built using:
 
 <div align="center">
 
 [![Javascript](https://img.shields.io/badge/Language-JavaScript-ff0000?style=plastic&logo=JavaScript&logoWidth=10)](https://javascript.info/)
 [![MongoDB](https://img.shields.io/badge/Database-MongoDB-80ff00?style=plastic&logo=MongoDB&logoWidth=10)](https://www.mongodb.com/home)
-[![Heroku](https://img.shields.io/badge/Cloud-Heroku-00ff00?style=plastic&logo=Heroku&logoWidth=10)](https://devcenter.heroku.com/categories/reference)
 [![Node.js](https://img.shields.io/badge/Framework-Node.js-ff0000?style=plastic&logo=Node.js&logoWidth=10)](https://nodejs.org/en/)
 [![React](https://img.shields.io/badge/Framework-React.js-ff8000?style=plastic&logo=React&logoWidth=10)](https://reactjs.org/docs/getting-started.html)
 [![Express](https://img.shields.io/badge/Framework-Express-80ff00?style=plastic&logo=Express&logoWidth=10)](https://expressjs.com/)
@@ -96,7 +92,7 @@ It's currently not deployed until the prototype MVP is completed.
 
 ## Getting Started
 
-Once completely built, this application will function as a deployed app on Heroku
+Once completely built, this application will function as a deployed app on Render.
 
 ### Local Installation / Testing
 
@@ -109,7 +105,7 @@ git clone git@github.com:Drew-Andersen/Vintage-Vault.git
 2. Install dependencies
 
 ```
-npm run install
+npm install
 ```
 
 3. Seed the database
@@ -124,25 +120,15 @@ npm run seed
 npm run develop
 ```
 
-5. Visit:
-
-[localhost]()
-
-```
-
-```
-
-[graphQL]()
-
-```
-
-```
-
 <!-- USAGE EXAMPLES -->
 
 ## Usage
 
-Once the app is functional, screenshots will be added in this section.
+<!-- Screenshots -->
+![Home page](client/public/imagees/Home.png)
+![Era page](client/public/imagees/Era.png)
+![Login page](client/public/imagees/Login.png)
+![Sign-up page](client/public/imagees/Sign-up.png)
 
 <!-- ROADMAP -->
 
@@ -153,32 +139,26 @@ Once the app is functional, screenshots will be added in this section.
 - [ ] Front End
 
   - [x] Routing
-  - [ ] Map (Markers, Search area)
+  - [x] Map (Markers, Search area)
   - [x] User Auth
-  - [ ] User Profile Page
+  - [x] User Profile Page
   - [x] Landing Page
-  - [ ] Pet Page
-  - [ ] Owner Page
-  - [ ] Map Page
-  - [ ] Error Page
-  - [ ] 404 Page
-  - [ ] Login Form
-  - [ ] Sign Up Form
-  - [ ] Test react-ol-wrapper library
-  - [ ] ? Migrate from ol to react-ol-wrapper ?
+  - [x] Error Page
+  - [x] Login Form
+  - [x] Sign Up Form
+  - [x] Search
 
 - [ ] Back End
   - [x] Typedefs
   - [x] Resolvers
   - [x] Seeds
   - [x] User Auth
-  - [ ] Migrate from MongoDB to Postgres (benefit more from a relational database)
 
 #### Future Development
 
-- [ ] Stripe (Donate Page)
-- [ ] Chat
-- [ ] Search
+- [ ] 404 Page
+- [ ] Stripe (checkout page)
+
 
 See the [open issues] (https://github.com/Drew-Andersen/Vintage-Vault) for a full list of proposed features (and known issues).
 
@@ -209,20 +189,20 @@ See LICENSE.txt for more information.
 
 ## Contact
 
-[Drew Anderson](https://github.com/Drew-Andersen) - [email address]
-[Xavier Leon](https://github.com/lateralmonster1) - [email address]
-[Setrige Crawford](https://github.com/SetCra123) - [email address]
+[Drew Andersen](https://github.com/Drew-Andersen) - [andrewtandersen@gmail.com] <br />
+[Xavier Leon](https://github.com/lateralmonster1) - [email address] <br />
+[Setrige Crawford](https://github.com/SetCra123) - [email address] <br />
  
 
 
 
 Project Links:
 
-[Figma Board- link later]()
+[Wireframe](https://docs.google.com/presentation/d/1NUg2MygvJb5myirMC37jNJ9gLDKaCSduznpV8PCzgLY/edit?usp=sharing)
 
 [Github Repository](https://github.com/Drew-Andersen/Vintage-Vault)
 
-[Deployment- link later]()
+[Deployment- link later](https://vintage-vault.onrender.com/)
 
 <!-- ACKNOWLEDGMENTS -->
 
