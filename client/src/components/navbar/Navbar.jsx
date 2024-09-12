@@ -1,5 +1,5 @@
-import { Link, useLocation/*, useNavigate*/ } from 'react-router-dom';
-import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import './navbar.css';
@@ -9,11 +9,13 @@ import Auth from '../../utils/auth';
 export default function Navbar() {
     const currentPage = useLocation().pathname;
     const [searchQuery, setSearchQuery] = useState('');
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleSearch = () => {
-        console.log(`Searching for: ${searchQuery}`);
-        // navigate(`/search?query=${encodeURIComponent(searchQuery)}`);
+        if (searchQuery.trim()) {
+            // Navigate to the search results page with the query
+            navigate(`/search?query=${encodeURIComponent(searchQuery)}`);
+        }
     };
 
     return (
@@ -21,17 +23,17 @@ export default function Navbar() {
             <nav className='w-100 d-flex justify-content-between'>
                 <h1 className='px-4 pt-2'>Vintage Vault</h1>
 
-                  {/* Search Bar */}
-                  <div className="search-bar w-50">
-                        <input
-                            type="text"
-                            className="search-input w-25"
-                            placeholder="Search for anything"
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                        />
-                        <Button variant="primary" onClick={handleSearch}>Search</Button>
-                    </div>
+                {/* Search Bar */}
+                <div className="search-bar w-50">
+                    <input
+                        type="text"
+                        className="search-input w-25"
+                        placeholder="Search for anything"
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                    />
+                    <Button variant="primary" onClick={handleSearch}>Search</Button>
+                </div>
 
                 <ul className='d-flex justify-content-end p-2 bg-navbar'>
                     <li className='px-3 py-1 mx-1'>
@@ -62,5 +64,5 @@ export default function Navbar() {
                 </ul>
             </nav>
         </>
-    )
+    );
 }
