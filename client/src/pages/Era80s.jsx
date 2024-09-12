@@ -31,6 +31,14 @@ export default function Era80s() {
         }
     }
 
+    const handleAddItemToCart = (item) => {
+        console.log(`Adding item to cart`, item)
+
+        const saveItems = JSON.parse(localStorage.getItem('cart')) || [];
+        saveItems.push(item);
+        localStorage.setItem('cart', JSON.stringify(saveItems));
+    }
+
     return (
         <>
             <section className="item-section">
@@ -47,6 +55,9 @@ export default function Era80s() {
                                 <h4>{item.name}</h4>
                                 <p>{item.description} from the {item.era} era.</p>
                                 <p className="price">{item.price}</p>
+                                <div className='text-center'>
+                                    <button className='btn btn-primary add-to-cart' onClick={() => handleAddItemToCart(item)}>Add to Cart</button>
+                                </div>
                             </div>
                         ))
                     ) : (
