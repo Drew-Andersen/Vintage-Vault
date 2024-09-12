@@ -121,3 +121,7 @@ html {
   background-color: #ddd;
   margin: 0 auto 10px;
 }
+
+.add-to-cart:hover {
+  transform: scale(1.05);
+}
