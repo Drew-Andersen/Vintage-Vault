@@ -17,6 +17,7 @@ import Era80s from './pages/Era80s';
 import Era90s from './pages/Era90s';
 import Era00s from './pages/Era00s';
 import Dashboard from './pages/Dashboard';
+import SearchResults from './pages/SearchResults';
 
 // Defining the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
       {
         path: '/dashboard',
         element: <Dashboard />
+      },
+      {
+        path: '/search',
+        element: <SearchResults />
       }
     ]
   }

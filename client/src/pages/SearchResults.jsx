@@ -1,19 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { getAllItems } from '../utils/API';
 import './searchResults.css';
-
-// mocks function to simulate an API call
-const fetchSearchResults = async (query) => {
-    // simulates search results. we can replace with our own real api.
-    const allItems = [];
-
-    // filtering items by query
-    return allItems.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
-};
 
 export default function SearchResults() {
     const location = useLocation();
     const [searchResults, setSearchResults] = useState([]);
+    const [categoryItems, setCategoryItems] = useState([]);
     const query = new URLSearchParams(location.search).get('query');
 
     useEffect(() => {
@@ -22,23 +15,40 @@ export default function SearchResults() {
         }
     }, [query]);
 
+    const fetchSearchResults = async (query) => {
+        try {
+            const response = await getAllItems();
+            const items = await response.json();
+            console.log(`Items retrieved:`, items);
+
+            const filteredItems = items.filter(item => item.category.toLowerCase() === `${query}`);
+            setCategoryItems(filteredItems);
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
     return (
         <div className="search-results">
             <h2>Search Results for "{query}"</h2>
-            {searchResults.length > 0 ? (
-                <div className="items-grid">
-                    {searchResults.map(item => (
-                        <div className="item-card" key={item.id}>
-                            <img src={item.imageUrl} alt={item.name} className="item-image" />
+            <div className="items-grid">
+                {categoryItems.length > 0 ? (
+                    categoryItems.map((item) => (
+                        <div className="item-card" key={item._id}>
+                            <img src={item.imageURL} alt={item.name} className="item-image" />
                             <h4>{item.name}</h4>
                             <p>{item.description}</p>
                             <p className="price">{item.price}</p>
+                            <div className='text-center'>
+                                <button className='btn btn-primary add-to-cart' onClick={() => handleAddItemToCart(item)}>Add to Cart</button>
+                            </div>
                         </div>
-                    ))}
-                </div>
-            ) : (
-                <p>No results found for your search.</p>
-            )}
+
+                    ))
+                ) : (
+                    <p>No results found for your search.</p>
+                )}
+            </div>
         </div>
     );
 }
