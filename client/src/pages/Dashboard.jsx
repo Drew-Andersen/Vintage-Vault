@@ -47,6 +47,7 @@ export default function Dashboard() {
             e.stopPropagation();
         }
         const user = JSON.parse(localStorage.getItem('user'));
+        
 
         try {
             const response = await postItem({ ...userFormData, sellerId: user._id });
