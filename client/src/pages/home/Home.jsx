@@ -30,9 +30,12 @@ const Home = () => {
   }
 
   /* Need a function to add an item to the cart */
-  const handleAddItemToCart = () => {
+  const handleAddItemToCart = (item) => {
     console.log(`Adding item to cart`, item)
-    
+
+    const saveItems = JSON.parse(localStorage.getItem('cart')) || [];
+    saveItems.push(item);
+    localStorage.setItem('cart', JSON.stringify(saveItems));
   }
 
   return (
@@ -55,9 +58,9 @@ const Home = () => {
                 <p>{item.price}</p>
               </div>
               <div className='text-center'>
-                  <button className='btn btn-primary add-to-cart' onClick={() => handleAddItemToCart(item)}>Add to Cart</button>
-                  {/* Add onClick={handleAddItemToCart(item)} to the button */}
-                </div> 
+                <button className='btn btn-primary add-to-cart' onClick={() => handleAddItemToCart(item)}>Add to Cart</button>
+                {/* Add onClick={handleAddItemToCart(item)} to the button */}
+              </div>
             </div>
           ))}
 

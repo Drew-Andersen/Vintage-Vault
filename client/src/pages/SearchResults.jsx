@@ -5,11 +5,7 @@ import './searchResults.css';
 // mocks function to simulate an API call
 const fetchSearchResults = async (query) => {
     // simulates search results. we can replace with our own real api.
-    const allItems = [
-        { id: 1, name: 'Vintage Phone', description: 'A classic 90s flip phone', price: '$99', imageUrl: 'https://example.com/vintage-phone.jpg' },
-        { id: 2, name: 'Retro Camera', description: 'A film camera from the 80s', price: '$199', imageUrl: 'https://example.com/retro-camera.jpg' },
-        // can add more mock items...
-    ];
+    const allItems = [];
 
     // filtering items by query
     return allItems.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
