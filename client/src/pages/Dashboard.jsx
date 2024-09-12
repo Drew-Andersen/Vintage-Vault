@@ -1,6 +1,6 @@
 import { Form, Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-import { postItem, getAllItems /* Change to getAllUserItems*/, removeItem } from '../utils/API';
+import { postItem, getAllUserItems /* Change to getAllUserItems*/, removeItem } from '../utils/API';
 
 export default function Dashboard() {
     const [userFormData, setUserFormData] = useState({
@@ -22,7 +22,7 @@ export default function Dashboard() {
 
     const itemRetreival = async (e) => {
         try {
-            const response = await getAllItems(); // will need to change the name of getAllItems to getAllUserItems
+            const response = await getAllUserItems(); // will need to change the name of getAllItems to getAllUserItems
             const items = await response.json();
             console.log(items);
             setAllItems(items);

@@ -2,7 +2,7 @@ const Item = require('../models/Item');
 const User = require('../models/User');
 
 module.exports = {
-  async getAllItems(req, res,) { // Change to getAllUserItems
+  async getAllUserItems(req, res,) { // Change to getAllUserItems
     try {
       const items = await Item.find({ seller: req.params.user_id });
       console.log(items);
@@ -13,17 +13,17 @@ module.exports = {
     }
   },
 
-  // async getAllItems(req, res,) {
-  //   try {
-  //     const items = await Item.find();
-  //     console.log(items);
+  async getAllItems(req, res,) {
+    try {
+      const items = await Item.find();
+      console.log(items);
 
-  //     res.json(items);
-  //   } catch (err) {
-  //     res.status(500).json(err);
-  //   }
-  // },
-  
+      res.json(items);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  },
+
   async getItem(req, res) {
     try {
       const item = await Item.findOne({ _id: req.params.itemId })

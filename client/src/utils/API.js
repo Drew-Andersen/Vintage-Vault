@@ -39,13 +39,23 @@ export const postItem = (itemData) => {
 
 }
 
-export const getAllItems = async () => {
+export const getAllUserItems = async () => { // Change to getAllUserItems
     const user = JSON.parse(localStorage.getItem('user'));
     
     const data = await fetch(`/api/items/${user._id}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
+        }
+    })
+    return data;
+}
+
+export const getAllItems = async () => {
+    const data = await fetch('/api/items', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
         }
     })
     return data;
