@@ -3,6 +3,8 @@ import "react-multi-carousel/lib/styles.css";
 import './carousel.css';
 
 export default function CarouselSlider() {
+    
+
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -28,7 +30,7 @@ export default function CarouselSlider() {
             <h3 className="text-center">Watches</h3>
             <Carousel
                 className="carousel"
-                swipeable={false}
+                swipeable={true}
                 draggable={false}
                 showDots={true}
                 infinite={true}

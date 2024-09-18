@@ -21,7 +21,9 @@ export default function Navbar() {
     return (
         <>
             <nav className='w-100 d-flex justify-content-between'>
-                <h1 className='px-4 pt-2'>Vintage Vault</h1>
+                <div className='d-flex'>
+                    <h1 className='px-4 pt-2'>Vintage Vault</h1>
+                </div>
 
                 {/* Search Bar */}
                 <div className="search-bar w-50">
