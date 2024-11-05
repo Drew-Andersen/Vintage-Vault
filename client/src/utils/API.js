@@ -8,14 +8,25 @@ export const getMe = (token) => {
     });
 };
 
-export const createUser = (userData) => {
-    return fetch('/api/users', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(userData),
-    });
+export const createUser = async (userData) => {
+    try {
+        const response = await fetch('/api/users', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(userData),
+        });
+
+        const data = await response.json();
+        if (!response.ok){
+            throw new Error("Signup failed, please try again.");
+        }
+        return data
+    } catch(err){
+        console.log(err);
+        
+    }
 };
 
 export const loginUser = (userData) => {
@@ -41,7 +52,7 @@ export const postItem = (itemData) => {
 
 export const getAllUserItems = async () => { // Change to getAllUserItems
     const user = JSON.parse(localStorage.getItem('user'));
-    
+
     const data = await fetch(`/api/items/${user._id}`, {
         method: 'GET',
         headers: {
@@ -64,7 +75,7 @@ export const getAllItems = async () => {
 export const removeItem = async () => {
     const item = window.location.pathname.split('/');
     console.log(item[2]);
-    
+
     const data = await fetch(`/api/items/${item._id}`, {
         method: 'DELETE',
         headers: {

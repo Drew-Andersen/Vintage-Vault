@@ -23,21 +23,24 @@ export default function Signup() {
 
     // check if form has everything (as per react-bootstrap docs)
     const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
+    // if (form.checkValidity() === false) {
+    //   event.preventDefault();
+    //   event.stopPropagation();
+    // }
 
     try {
       const response = await createUser(userFormData);
+      Auth.login(response.token);
+      showAlert(false);
+      setUserFormData({ username:"", email:"", password:"" });
 
       if (!response.ok) {
         throw new Error('something went wrong!');
       }
 
-      const { token, user } = await response.json();
-      console.log(user, token);
-      Auth.login(token);
+    //   const { token, user } = await response.json();
+    //   console.log(user, token);
+    //   Auth.login(token);
     } catch (err) {
       console.error(err);
       setShowAlert(true);

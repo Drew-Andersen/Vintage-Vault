@@ -111,7 +111,7 @@ export default function Dashboard() {
                         <div className="form-container d-flex justify-content-center align-items-center">
                             <div className="bg-white p-3 rounded w-100 border">
                                 <h2 className='text-center'>List an Item</h2>
-                                <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
+                                <Form method='POST' action='/upload' noValidate validated={validated} onSubmit={handleFormSubmit} encType="multipart/form-data">
                                     <Form.Group className="mb-3">
                                         <Form.Label htmlFor='item-name'>
                                             <strong>Item Name</strong>

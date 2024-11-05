@@ -100,7 +100,7 @@ export default function Login() {
 
                         <div className="text-center">
                             <p className="text-center mb-0 mt-3">Don't have an account?</p>
-                            <Link to='/signup' className="btn btn-primary border w-100 rounded rext-decoration-nopne">
+                            <Link to='/signup' className="btn btn-primary border w-100 rounded text-decoration-none">
                                 Sign-up
                             </Link>
                         </div>
